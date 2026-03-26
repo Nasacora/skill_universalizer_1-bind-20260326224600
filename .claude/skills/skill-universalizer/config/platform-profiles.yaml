@@ -1,0 +1,78 @@
+claude:
+  name: "Claude Code (Anthropic)"
+  description: "CLI de Anthropic con soporte de skills, hooks y agentes"
+  models:
+    - claude-opus-4-5
+    - claude-sonnet-4-5
+    - claude-haiku-4-5
+  model_default: claude-haiku-4-5
+  features:
+    - tools
+    - vision
+    - artifacts
+    - hooks
+    - agents
+    - file_access
+    - bash_execution
+  hooks:
+    - stop
+    - pre_tool_use
+    - post_tool_use
+    - notification
+    - sub_agent_stop
+  trigger_format: yaml
+  skill_dir: ".claude/skills"
+  notes: "Plataforma origen. Soporta hooks, agentes y artifacts nativamente."
+
+codex:
+  name: "OpenAI Codex CLI"
+  description: "CLI de OpenAI orientado a generación y edición de código"
+  models:
+    - gpt-4o
+    - gpt-4o-mini
+    - gpt-4-turbo
+  model_default: gpt-4o
+  features:
+    - tools
+    - file_access
+    - bash_execution
+  hooks: []
+  trigger_format: markdown
+  skill_dir: ".codex/skills"
+  notes: "No soporta hooks nativos ni artifacts."
+
+cursor:
+  name: "Cursor AI Editor"
+  description: "Editor de código con IA integrada"
+  models:
+    - claude-sonnet-4-5
+    - gpt-4o
+    - cursor-small
+  model_default: claude-sonnet-4-5
+  features:
+    - tools
+    - vision
+    - file_access
+    - codebase_search
+  hooks: []
+  trigger_format: markdown
+  skill_dir: ".cursor/rules"
+  notes: "Usa .mdc o .md en .cursor/rules. Sin hooks nativos."
+
+gemini:
+  name: "Google Gemini CLI"
+  description: "CLI de Google con Gemini como modelo base"
+  models:
+    - gemini-2.0-flash
+    - gemini-1.5-pro
+    - gemini-1.5-flash
+  model_default: gemini-2.0-flash
+  features:
+    - tools
+    - vision
+    - file_access
+    - long_context
+  hooks: []
+  trigger_format: markdown
+  skill_dir: ".gemini/skills"
+  notes: "Contexto muy largo disponible. Sin hooks."

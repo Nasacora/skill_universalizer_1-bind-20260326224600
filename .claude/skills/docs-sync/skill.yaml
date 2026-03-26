@@ -1,0 +1,20 @@
+id: docs-sync
+name: "Pipeline de documentación"
+description: "Sincroniza docs del proyecto con el estado real del sistema"
+purpose: "Actualizar documentación, sincronizar métricas, ejecutar pipeline documental"
+keywords:
+  - documentación
+  - sincronización
+  - pipeline
+  - docs
+status: active
+visibility: public
+when_to_use: "Cuando hay que actualizar o sincronizar documentación del proyecto"
+agent: null
+platforms:
+  - claude
+core: SKILL.md
+providers:
+  claude:
+    frontmatter: providers/claude.yml
+version: "1.0.0"

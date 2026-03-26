@@ -1,0 +1,31 @@
+---
+skill_id: {{ skill_id }}
+platform: claude
+trigger: "{{ trigger }}"
+model: {{ model }}
+{% if hooks %}hooks:
+{% for hook in hooks %}  - {{ hook }}
+{% endfor %}{% endif %}generated_at: {{ generated_at }}
+---
+
+# {{ name }}
+
+{{ description }}
+
+## Cuándo usar
+
+{{ when_to_use }}
+
+## Contenido
+
+{{ core_content }}
+
+{% if notes %}
+## Notas Claude
+
+{{ notes }}
+
+{% endif %}
+---
+*Generado automáticamente por skill-universalizer v{{ version }}*
+*Fuente: {{ skill_id }}/SKILL.md — No editar manualmente.*

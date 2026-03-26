@@ -1,0 +1,4 @@
+trigger: "when documentation is out of sync with the codebase"
+model: claude-sonnet-4-5
+hooks: []
+notes: "Cursor uses .cursor/rules/. Deploy as .mdc file if needed."

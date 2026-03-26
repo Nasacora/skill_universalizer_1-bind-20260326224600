@@ -1,0 +1,33 @@
+---
+skill_id: {{ skill_id }}
+platform: {{ platform }}
+generated_at: {{ generated_at }}
+---
+
+# {{ name }}
+
+{{ description }}
+
+## Cuándo usar
+
+{{ when_to_use }}
+
+{% if trigger %}
+## Trigger
+
+{{ trigger }}
+
+{% endif %}
+## Contenido
+
+{{ core_content }}
+
+{% if notes %}
+## Notas de plataforma ({{ platform }})
+
+{{ notes }}
+
+{% endif %}
+---
+*Generado automáticamente por skill-universalizer v{{ version }} — Plataforma: {{ platform }}*
+*Fuente: {{ skill_id }}/SKILL.md — No editar manualmente.*

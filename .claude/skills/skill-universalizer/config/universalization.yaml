@@ -1,0 +1,43 @@
+required_fields:
+  - id
+  - name
+  - core
+  - providers
+
+optional_fields:
+  - description
+  - purpose
+  - keywords
+  - status
+  - visibility
+  - when_to_use
+  - agent
+  - version
+
+id_pattern: "^[a-z][a-z0-9-]+$"
+
+exclude_patterns:
+  - "*.pyc"
+  - "__pycache__"
+  - ".git"
+  - ".DS_Store"
+  - "*.tmp"
+  - "*.bak"
+  - ".pytest_cache"
+  - "*.egg-info"
+  - ".env"
+  - "node_modules"
+
+output_root: "shared_artifacts/universalized-skills"
+
+create_manifest: true
+
+copy_directories:
+  - scripts
+  - config
+
+supported_platforms:
+  - claude
+  - codex
+  - cursor
+  - gemini

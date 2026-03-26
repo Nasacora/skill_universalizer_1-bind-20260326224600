@@ -1,0 +1,5 @@
+trigger: "cuando hay que actualizar o sincronizar documentación del proyecto"
+model: claude-haiku-4-5
+hooks:
+  - stop
+notes: ""

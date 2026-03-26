@@ -1,0 +1,21 @@
+id: skill-universalizer
+name: "Skill Universalizer"
+description: "Transforma skills específicas en universales multi-plataforma"
+purpose: "Adaptar una skill de Claude a Codex, Cursor, Gemini sin duplicar código"
+keywords:
+  - universalización
+  - portabilidad
+  - multi-plataforma
+  - skill
+  - build
+status: active
+visibility: public
+when_to_use: "Cuando tienes una skill en Claude y quieres portarla a otras plataformas"
+agent: null
+platforms:
+  - claude
+core: SKILL.md
+providers:
+  claude:
+    frontmatter: providers/claude.yml
+version: "1.0.0"

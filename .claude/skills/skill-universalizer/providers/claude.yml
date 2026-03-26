@@ -1,0 +1,5 @@
+trigger: "cuando hay que universalizar una skill para múltiples plataformas"
+model: claude-haiku-4-5
+hooks:
+  - stop
+notes: ""

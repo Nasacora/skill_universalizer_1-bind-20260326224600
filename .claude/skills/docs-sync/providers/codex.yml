@@ -1,0 +1,4 @@
+trigger: "when project documentation needs to be updated or synchronized"
+model: gpt-4o
+hooks: []
+notes: "Codex does not support native hooks. Pure markdown instructions."
